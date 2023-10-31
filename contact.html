@@ -23,7 +23,8 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Font Awesome CSS link -->
     <link
       rel="stylesheet"
@@ -87,7 +88,8 @@
           style="background-image: url('./assets/images/contact-bg.png')"
         >
           <div class="container">
-            <form action="" class="contact-form">
+            <form action="" class="contact-form" data-aos="fade-up"
+            data-aos-duration="3000">
               <h2 class="headline-sm" id="contact-label">Get in touch</h2>
               <p class="contact-text body-md">
                 Our friendly team would love to hear from you.
@@ -134,12 +136,14 @@
               ></textarea>
               <a href="#" class="btn btn-tertiary">Send Message</a>
             </form>
-            <div class="contact-content">
+            <div class="contact-content"data-aos="fade-up"
+            data-aos-duration="3000">
               <ul class="contact-list">
                 <li class="contact-item">
                   <div
                     class="item-icon"
                     style="background-color: hsl(177, 39%, 72%)"
+                    
                   >
                     <i class="fas fa-phone"></i>
                   </div>
@@ -194,6 +198,9 @@
       </ul>
       <p class="text-center">&copy; 2023 copyright all right reserved</p>
     </div>
+    <script>
+      AOS.init();
+    </script>
   </footer>
 </body>
 </html>

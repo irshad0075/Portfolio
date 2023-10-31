@@ -7,7 +7,7 @@
       name="description"
       content="This is a personal portfolio HTML template made by codewithsadee"
     />
-    <meta name="title" content="Irshad - Web Developer Based in Los Angeles" />
+    <meta name="title" content="Irshad - Web Developer Based in Karchi,Pakistan" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -17,10 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./assets/css/require.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="preload" href="./assets/images/hero-banner.png" />
-    <title>Irshad - Web Developer Based in Los Angeles</title>
+    <title>Irshad - Web Developer Based in Karchi,Pakistan</title>
   </head>
   <body>
     <header class="header" data-header>
@@ -67,13 +69,13 @@
         <!-- HERO SECTION -->
         <section class="section hero" aria-label="home">
           <div class="container">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-right">
               <p class="hero-subtitle">👋, My name is Irshad</p>
               <h1 class="headline-lg">I'm a Developer</h1>
               <p class="hero-text body-md">Based in Karachi, Pakistan.</p>
-              <a href="#" class="btn btn-primary">Let's Start</a>
+              <a href="./contact.html" class="btn btn-primary">Let's Start</a>
             </div>
-            <figure class="hero-banner">
+            <figure class="hero-banner" data-aos="fade-left">
               <img
                 src="./assets/images/hero-banner.png"
                 width="780"
@@ -97,7 +99,7 @@
         <!-- ABOUT ME SECTION CONTINUED -->
         <section class="section about" aria-label="about me">
           <div class="container">
-            <figure class="about-banner">
+            <figure class="about-banner" data-aos="zoom-in-right">
               <img
                 src="./assets/images/about-banner.png"
                 width="580"
@@ -107,7 +109,7 @@
                 class="w-100"
               />
             </figure>
-            <div class="about-content">
+            <div class="about-content" data-aos="zoom-in-left">
               <h2 class="title-lg">I'm MERN Stack Developer</h2>
               <p class="body-md section-text">
                 I'm a MERN Stack Developer Developer. I code and create web
@@ -128,7 +130,9 @@
         <!-- SKILLS SECTION -->
         <section class="section skill" aria-labelledby="skill-label">
           <div class="container">
-            <div class="skill-content">
+            <div class="skill-content" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
               <h2 class="section-title headline-md" id="skill-label">
                 My Skills
               </h2>
@@ -207,7 +211,9 @@
               </ul>
             </div>
 
-            <figure class="skill-banner">
+            <figure class="skill-banner" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
               <img
                 src="./assets/images/skill-banner.png"
                 width="581"
@@ -270,5 +276,8 @@
         <p class="text-center">&copy; 2023 copyright all right reserved</p>
       </div>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
